@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/jquery.svg.css">
+    <script type="text/javascript" src="jquery.svganim.js"></script>
+    <script type="text/javascript" src="js/jquery.svg.js"></script>
+    <script src="anime.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>   
+
+    <style type="text/css">
+      #my_centered_buttons { display: flex; justify-content: center; }
+      </style>
+<style>
+
+.banner {
+  width: 100%;
+  background-color: blue;
+  margin: 0 auto;
+}
+.btn button {
+    background: #aad4ff;
+    border:3px solid grey;
+    padding: 5px;
+    width: 135px;
+    text-align:centre;
+    cursor: pointer; /* Pointer/hand icon */
+    font-weight: bold;
+    display: float;
+}
+
+.btn-img  {
+    border: 3px solid red;
+    margin-right: 15px;    
+    vertical-align: middle;
+    position: 
+}
+/*#btn_container img {
+    border: 3px solid red;
+    margin-right: 15px;    
+    vertical-align: middle;
+    position: 
+}*/
+.btn-txt {
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+/* Add a background color on hover */
+.btn button:hover {
+  background-color: Pink;
+}
+
+.btn button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+</style>
+</head>
+<body >
+<div class="banner" id="my_centered_buttons">
+
+<div class="btn" >               
+    <button id="btn-1" type="button" onClick="function go()">
+      <img  src="restart.png" width="30" height="30"/>
+      <span class="btn-txt">Re-start</span>
+    
+</button>&nbsp; &nbsp; &nbsp; &nbsp;
+<button  type="button" id="btn-2">               
+    
+      <img  src="start.png" width="30" height="30"/>
+      <span class="btn-txt">Start</span>
+    
+</button> &nbsp; &nbsp; &nbsp; &nbsp;
+<button  id="btn-3">               
+    
+      <img  src="rt-arr.png" width="30" height="30"/>
+      <span class="btn-txt"> Next</span>
+    
+</button>
+</div>
+</div>
+
+<svg width="770" height="560" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+  
+  <defs>
+    <pattern id="img1" patternUnits="userSpaceOnUse" width="100" height="100">
+      <image xlink:href="wall-fin.jpg" x="0" y="0" width="100" height="100" preserveAspectRatio="none"/>
+    </pattern>
+  </defs>
+  <defs>
+    <pattern id="img2" patternUnits="userSpaceOnUse" width="100" height="100">
+      <image xlink:href="wall-brown.jpg" x="0" y="0" width="100" height="100" preserveAspectRatio="none"/>
+    </pattern>
+  </defs>
+  <defs>
+    <pattern id="img3" patternUnits="userSpaceOnUse" width="100" height="100">
+      <image xlink:href="floor-sto.jpg" x="0" y="0" width="100" height="100" preserveAspectRatio="none"/>
+    </pattern>
+  </defs>
+  
+  <g class="layer" display="inline">
+   <title>Layer 1</title>
+   <rect fill="url(#img2)" height="188.11524" id="svg_1" stroke="#4c4c4c" width="380.13071" x="186.76433" y="82.23785"/>
+   <path d="m45.05313,26.5c650.14799,1.83371 653.02052,1.83371 652.54176,1.5281c-0.47875,-0.30562 -129.74235,52.8721 -130.2211,52.56648c-0.47875,-0.30562 -380.60946,1.5281 -381.08822,1.22248c-0.47875,-0.30562 -141.23244,-55.31706 -141.23244,-55.31706z" fill="url(#img1)" id="svg_5" stroke="#4c4c4c" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="null"/>
+   <path d="m187.72184,267.74038c0,0 -71.81311,197.69519 -72.29186,197.25974c-0.47875,-0.43545 -79.95193,-3.04816 -80.43068,-3.48362c-0.47875,-0.43545 10.05383,-434.1456 9.57508,-434.58105" fill="url(#img1)" id="svg_6" stroke="#4c4c4c" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null"/>
+   <path d="m567.85255,269.48219l94.31455,192.03431l48.83291,0l-16.27764,-433.71015" fill="url(#img1)" id="svg_7" stroke="#4c4c4c" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null"/>
+   <path d="m187.72184,269.86948c0,0 -72.77061,196.82428 -72.77061,196.82428c0,0 548.65213,-1.74181 548.17338,-2.17726c-0.47875,-0.43545 -95.27205,-192.03431 -95.75081,-192.46976c-0.47875,-0.43545 -379.65196,-2.17726 -379.65196,-2.17726z" fill= "url(#img3)" id="svg_9" stroke="#4c4c4c" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="null"/> /*"url(#transformedPattern)"
+   <path d="m46.5,27.5l140.5,53.5l-1,185l-139.5,-238.5z" fill="url(#img1)" id="svg_12" stroke="#e5e5e5" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="null"/>
+   <path d="m568.5,82.5l127.5,-56.5c0,0 -129.5,246.5 -129.5,246.5c0,0 2,-190 2,-190z" fill="url(#img1)" id="svg_41" stroke="#e5e5e5" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="null"/>
+  </g>
+
+  
+  
+  
+  <title>Layer 3</title>
+  <g class="layer">
+   <title>Layer 3</title>
+   <g class="layer" id="svg_17"/>
+   <rect fill="#000000" height="26" id="svg_2" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="767" x="2.5" y="1.5"/>
+   <text fill="#ffff00" font-family="Serif" font-size="24" font-style="italic" font-weight="bold" id="svg_88" stroke="#ffff00" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" text-anchor="middle" x="389.5" xml:space="preserve" y="23.5">Compression Test</text>
+   <g id="bottom"/>
+   <rect fill="#000000" height="22.43901" id="svg_10" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="3" width="764" x="3" y="473"/>
+   <text fill="#ffff00" font-family="Arial" font-size="16" font-style="italic"  id="svg_888" stroke="#ffff00" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" text-anchor="middle" transform="matrix(1 0 0 0.863039 0 64.3033)" x="368.5" xml:space="preserve" y="488.221746">&gt;: Click Next</text>
+   <text fill="#ffff00" font-family="Serif" font-size="14" font-style="italic" font-weight="bold" id="svg_89" stroke="#ffff00" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" text-anchor="middle" transform="matrix(1 0 0 0.863039 0 64.3033)" x="368.5" xml:space="preserve" y="488.221746">&gt;:Click on Next to do the experiment</text>
+   <rect fill="#000000" height="486" id="svg_20" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="3" width="10" x="0.5" y="7.50002"/>
+   <rect fill="#000000" height="465.00001" id="svg_24" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="3" width="10" x="758.5" y="27.5"/>
+   <text fill="#000000" font-family="serif" font-size="24" id="svg_27" stroke="#ffff00" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" text-anchor="middle" x="215.5" xml:space="preserve" y="12.5"/>
+  </g>
+  <defs>
+   <pattern height="20" id="transformedPattern" patternTransform="rotate(35)" patternUnits="userSpaceOnUse" width="20" x="10" y="10">
+    <circle cx="10" cy="10" fill="#ffaa56" id="svg_34" r="10"/>
+   </pattern>
+   <linearGradient id="svg_16">
+    <stop offset="0" stop-color="#ffff56"/>
+    <stop offset="1" stop-color="#0000a9"/>
+   </linearGradient>
+   <linearGradient id="svg_36">
+    <stop offset="0" stop-color="#ffffaa"/>
+    <stop offset="1" stop-color="#000055"/>
+   </linearGradient>
+  </defs>
+  <defs>
+   <pattern height="20" id="transformedPattern-1" patternTransform="rotate(35)" patternUnits="userSpaceOnUse" width="20" x="10" y="10">
+    <circle cx="10" cy="10" fill="#aaff56" id="svg_34" r="10"/>
+   </pattern>
+   <linearGradient id="svg_16">
+    <stop offset="0" stop-color="#ffff56"/>
+    <stop offset="1" stop-color="#0000a9"/>
+   </linearGradient>
+   <linearGradient id="svg_36">
+    <stop offset="0" stop-color="#ffffaa"/>
+    <stop offset="1" stop-color="#000055"/>
+   </linearGradient>
+  </defs>
+  
+
+ </svg>
+ </body> 
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="anime.min.js"></script>
+<script src="./path-to-two/two.js"></script>
+<script>
+
+
+$(document).ready(function(){
+  $(function(){
+    $("#svg_888").hide();
+  });
+});
+
+
+</script>
+
+</html>
