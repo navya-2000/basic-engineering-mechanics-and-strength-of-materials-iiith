@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style type="text/css">
+      #my_centered_buttons { display: flex; justify-content: center; }
+      </style>
+<style>
+
+.banner {
+  width: 100%;
+  background-color: blue;
+  margin: 0 auto;
+}
+.btn button {
+    background: #aad4ff;
+    border:3px solid grey;
+    padding: 5px;
+    width: 135px;
+    text-align:centre;
+    cursor: pointer; /* Pointer/hand icon */
+    font-weight: bold;
+    display: float;
+}
+
+.btn-img  {
+    border: 3px solid red;
+    margin-right: 15px;    
+    vertical-align: middle;
+    position: 
+}
+
+.btn-txt {
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+/* Add a background color on hover */
+.btn button:hover {
+  background-color: Pink;
+}
+
+.btn button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+</style>
+</head>
+<body >
+<div class="banner" id="my_centered_buttons">
+
+<div class="btn" >               
+    <button id="btn1">
+      <img  src="restart.png" width="30" height="30"/>
+      <span class="btn-txt">Re-start</span>
+    
+</button>&nbsp; &nbsp; &nbsp; &nbsp;
+<button  id="btn2">               
+    
+      <img  src="start.png" width="30" height="30"/>
+      <span class="btn-txt">Start</span>
+    
+</button> &nbsp; &nbsp; &nbsp; &nbsp;
+<button  id="btn3">               
+    
+      <img  src="rt-arr.png" width="30" height="30"/>
+      <span class="btn-txt"> Next</span>
+    
+</button>
+</div>
+</div>
+</body>
+</html>
