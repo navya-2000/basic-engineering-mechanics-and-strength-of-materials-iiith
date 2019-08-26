@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/jquery.svg.css">
+    <script type="text/javascript" src="jquery.svganim.js"></script>
+    <script type="text/javascript" src="js/jquery.svg.js"></script>
+    <script src="anime.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+    </script>
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: false;
+        }
+
+        th,
+        td {
+            padding: 5px;
+            text-align: left;
+        }
+    </style>
+
+    <style type="text/css">
+        #my_centered_buttons {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <style>
+        .banner {
+            width: 100%;
+            background-color: blue;
+            margin: 0 auto;
+        }
+
+        .btn button {
+            background: #aad4ff;
+            border: 3px solid grey;
+            padding: 5px;
+            width: 135px;
+            text-align: centre;
+            cursor: pointer;
+            /* Pointer/hand icon */
+            font-weight: bold;
+            display: float;
+        }
+
+        .btn-img {
+            border: 3px solid red;
+            margin-right: 15px;
+            vertical-align: middle;
+            position:
+        }
+
+
+        .btn-txt {
+            vertical-align: middle;
+            font-weight: bold;
+        }
+
+        /* Add a background color on hover */
+        .btn button:hover {
+            background-color: Pink;
+        }
+
+        .btn button:not(:last-child) {
+            border-bottom: none;
+            /* Prevent double borders */
+        }
+    </style>
+    <style>
+        table,
+        th,
+        td {
+            border: 0.5px solid grey;
+            border-collapse: collapse;
+
+        }
+
+        tr {}
+
+        th,
+        td {
+            padding: 5px;
+
+            text-align: center;
+
+        }
+        p.hidden {
+            visibility: ;
+            background-color: #f1f1c1;
+            padding: 5px;
+            font-size: 18px;
+            text-align: center;
+            background-color: ;
+            color: black;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!--- <input type="button" value="Start" onclick="javaScript:startStopImg()" id="startButton">--->
+<!--- The top banner and placement of the buttons on it--->
+        <div class="banner" id="my_centered_buttons">
+
+            <div class="btn">
+                <button id="btn-1" type="button">
+                    <img src="restart.png" width="30" height="30" />
+                    <span class="btn-txt">Re-start</span>
+
+                </button> &nbsp; &nbsp; &nbsp; &nbsp;
+                <button type="button" id="btn-2" value="Start" onclick="img-7.src='stop.png' value=" stop">
+
+                    <img id="img-7" src="start.png" width="30" onclick="this.src='stop.png'" height="30" />
+                    <span onclick="value :Stop" class="btn-txt">Start</span>
+
+                </button> &nbsp; &nbsp; &nbsp; &nbsp;
+
+                <button id="btn-3">
+
+                    <img src="rt-arr.png" width="30" height="30" />
+                    <span class="btn-txt"> Next</span>
+
+                </button>
+            </div>
+        </div>
+<!--- Table structure with rows and columns for placement of elements--->
+
+        <table class="tab-hide" style="width:40%">
+            <tr>
+                <th rowspan="2">
+                    <svg width="770" height="560" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:svg="http://www.w3.org/2000/svg">
+                        <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+                        <defs>
+                            <pattern height="20" id="transformedPattern" patternTransform="rotate(35)"
+                                patternUnits="userSpaceOnUse" width="20" x="10" y="10">
+                                <circle cx="10" cy="10" fill="#ffaa56" id="svg_34" r="10" />
+                            </pattern>
+                            <linearGradient id="svg_16">
+                                <stop offset="0" stop-color="#ffff56" />
+                                <stop offset="1" stop-color="#0000a9" />
+                            </linearGradient>
+                            <linearGradient id="svg_36">
+                                <stop offset="0" stop-color="#ffffaa" />
+                                <stop offset="1" stop-color="#000055" />
+                            </linearGradient>
+                        </defs>
+                        <defs>
+                            <pattern height="20" id="transformedPattern-1" patternTransform="rotate(35)"
+                                patternUnits="userSpaceOnUse" width="20" x="10" y="10">
+                                <circle cx="10" cy="10" fill="#aaff56" id="svg_34" r="10" />
+                            </pattern>
+                            <linearGradient id="svg_16">
+                                <stop offset="0" stop-color="#ffff56" />
+                                <stop offset="1" stop-color="#0000a9" />
+                            </linearGradient>
+                            <linearGradient id="svg_36">
+                                <stop offset="0" stop-color="#ffffaa" />
+                                <stop offset="1" stop-color="#000055" />
+                            </linearGradient>
+                        </defs>
+
+
+                        <defs>
+                            <pattern id="img1" patternUnits="userSpaceOnUse" width="100" height="100">
+                                <image xlink:href="wall-fin.jpg" x="0" y="0" width="100" height="100"
+                                    preserveAspectRatio="none" />
+                            </pattern>
+                        </defs>
+                        <defs>
+                            <pattern id="img2" patternUnits="userSpaceOnUse" width="100" height="100">
+                                <image xlink:href="wall-brown.jpg" x="0" y="0" width="100" height="100"
+                                    preserveAspectRatio="none" />
+                            </pattern>
+                        </defs>
+                        <defs>
+                            <pattern id="img3" patternUnits="userSpaceOnUse" width="100" height="100">
+                                <image xlink:href="floor-sto.jpg" x="0" y="0" width="100" height="100"
+                                    preserveAspectRatio="none" />
+                            </pattern>
+                        </defs>
+
+                        <g class="layer" display="inline">
+                            <title>Layer 1</title>
+                            <rect fill="url(#img2)" height="188.11524" id="svg_1" stroke="#4c4c4c" width="380.13071"
+                                x="186.76433" y="82.23785" />
+                            <path
+                                d="m45.05313,26.5c650.14799,1.83371 653.02052,1.83371 652.54176,1.5281c-0.47875,-0.30562 -129.74235,52.8721 -130.2211,52.56648c-0.47875,-0.30562 -380.60946,1.5281 -381.08822,1.22248c-0.47875,-0.30562 -141.23244,-55.31706 -141.23244,-55.31706z"
+                                fill="url(#img1)" id="svg_5" stroke="#4c4c4c" stroke-dasharray="null"
+                                stroke-linecap="null" stroke-linejoin="null" stroke-width="null" />
+                            <path
+                                d="m187.72184,267.74038c0,0 -71.81311,197.69519 -72.29186,197.25974c-0.47875,-0.43545 -79.95193,-3.04816 -80.43068,-3.48362c-0.47875,-0.43545 10.05383,-434.1456 9.57508,-434.58105"
+                                fill="url(#img1)" id="svg_6" stroke="#4c4c4c" stroke-dasharray="null"
+                                stroke-linecap="null" stroke-linejoin="null" />
+                            <path d="m567.85255,269.48219l94.31455,192.03431l48.83291,0l-16.27764,-433.71015"
+                                fill="url(#img1)" id="svg_7" stroke="#4c4c4c" stroke-dasharray="null"
+                                stroke-linecap="null" stroke-linejoin="null" />
+                            <path
+                                d="m187.72184,269.86948c0,0 -72.77061,196.82428 -72.77061,196.82428c0,0 548.65213,-1.74181 548.17338,-2.17726c-0.47875,-0.43545 -95.27205,-192.03431 -95.75081,-192.46976c-0.47875,-0.43545 -379.65196,-2.17726 -379.65196,-2.17726z"
+                                fill="url(#img3)" id="svg_9" stroke="#4c4c4c" stroke-dasharray="null"
+                                stroke-linecap="null" stroke-linejoin="null" stroke-width="null" />
+                            /*"url(#transformedPattern)"
+                            <path d="m46.5,27.5l140.5,53.5l-1,185l-139.5,-238.5z" fill="url(#img1)" id="svg_12"
+                                stroke="#e5e5e5" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null"
+                                stroke-width="null" />
+                            <path d="m568.5,82.5l127.5,-56.5c0,0 -129.5,246.5 -129.5,246.5c0,0 2,-190 2,-190z"
+                                fill="url(#img1)" id="svg_41" stroke="#e5e5e5" stroke-dasharray="null"
+                                stroke-linecap="null" stroke-linejoin="null" stroke-width="null" />
+                        </g>
+
+
+                        <svg>
+                            <g class="layer" id="main">
+                                <title>Layer 2</title>
+                                <rect fill="#00ffff" height="18" id="svg_3" stroke="#00ffff" stroke-dasharray="null"
+                                    stroke-linecap="null" stroke-linejoin="null" stroke-width="2" width="171" x="232.5"
+                                    y="372.5" />
+                                <path
+                                    d="m231.5,372.5c30,-74 31,-76 30.5,-76.5c-0.5,-0.5 153.5,2.5 153,2c-0.5,-0.5 -11.5,73.5 -12,73"
+                                    fill="#00ffff" id="svg_4" stroke="#00ffff" stroke-dasharray="null"
+                                    stroke-linecap="null" stroke-linejoin="null" stroke-width="2" />
+                                <ellipse cx="323.5" cy="322.5" fill="#e5e5e5" id="svg_13" rx="44" ry="17"
+                                    stroke="#e5e5e5" stroke-dasharray="null" stroke-linecap="null"
+                                    stroke-linejoin="null" stroke-width="8" />
+                                <ellipse cx="325" cy="302.5" fill="#e5e5e5" id="svg_14" rx="43.5" ry="15"
+                                    stroke="#e5e5e5" stroke-dasharray="null" stroke-linecap="null"
+                                    stroke-linejoin="null" stroke-width="8" />
+                                <rect fill="url(#svg_16)" height="20" id="svg_15" stroke="#4c4c4c"
+                                    stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null"
+                                    stroke-width="2" width="132" x="259.5" y="274.5" />
+                                <rect fill="#b2b2b2" height="32" id="brick" stroke="#b2b2b2" stroke-dasharray="null"
+                                    stroke-linecap="null" stroke-linejoin="null" stroke-width="3" width="91" x="285.5"
+                                    y="240.5" />
+                                <svg id="topp">
+                                    <g id="top" />
+                                    <rect fill="url(#svg_36)" height="20" id="svg_18" stroke="#333333"
+                                        stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-width="2" width="124" x="263.5" y="201.5" />
+                                    <ellipse cx="331.5" cy="194.5" fill="#e5e5e5" id="svg_8" rx="53" ry="4"
+                                        stroke="#e5e5e5" stroke-dasharray="null" stroke-linecap="null"
+                                        stroke-linejoin="null" stroke-width="8" />
+                                    <rect fill="#e5e5e5" height="62" id="svg_11" stroke="#e5e5e5"
+                                        stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-width="5" width="90" x="285.5" y="123.5" />
+                                    <ellipse cx="332.5" cy="84.5" fill="#b2b2b2" id="svg_19" rx="68" ry="6"
+                                        stroke="#cccccc" stroke-dasharray="null" stroke-linecap="null"
+                                        stroke-linejoin="null" stroke-width="7" />
+                                    <rect fill="#191919" height="26" id="svg_21" stroke="#cccccc"
+                                        stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-width="3" width="7" x="327.5" y="93.5" />
+                                    <rect fill="#191919" height="33.00935" id="svg_22" stroke="#cccccc"
+                                        stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-width="3" transform="rotate(-22.0942 282.181 106.555)" width="10.88065"
+                                        x="276.74054" y="90.05063" />
+                                    <rect fill="#191919" height="29.53549" id="svg_23" stroke="#cccccc"
+                                        stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-width="3" transform="rotate(22.6938 381.202 104.712)" width="7.60774"
+                                        x="377.39843" y="89.94412" />
+
+                            </g>
+                            <g id="rest">
+                                <rect fill="#e5e5e5" height="201" id="svg_28" stroke="#e5e5e5" stroke-dasharray="null"
+                                    stroke-linecap="null" stroke-linejoin="null" stroke-width="2" width="17" x="235.5"
+                                    y="167.5" />
+                                <rect fill="#e5e5e5" height="201" id="svg_29" stroke="#e5e5e5" stroke-dasharray="null"
+                                    stroke-linecap="null" stroke-linejoin="null" stroke-width="2" width="17" x="395"
+                                    y="165" />
+                                <rect fill="#0000bf" height="20" id="svg_30" stroke="#0000bf" stroke-dasharray="null"
+                                    stroke-linecap="null" stroke-linejoin="null" stroke-width="2" width="179" x="235.5"
+                                    y="166.5" />
+                                <rect fill="#5656ff" height="136" id="svg_31" stroke="#0000ff" stroke-dasharray="null"
+                                    stroke-linecap="null" stroke-linejoin="null" stroke-width="3" width="123" x="429.5"
+                                    y="254.5" />
+                                <rect fill="#cccccc" height="18" id="svg_32" stroke="#cccccc" stroke-dasharray="null"
+                                    stroke-linecap="null" stroke-linejoin="null" stroke-width="3" width="140" x="427.5"
+                                    y="235.5" />
+                                <path
+                                    d="m427.5,233.5c-4,-73 -4,-74 -4.5,-74.5c-0.5,-0.5 110.5,-0.5 110,-1c-0.5,-0.5 31.5,75.5 31,75"
+                                    fill="#e5e5e5" id="svg_37" stroke="#cccccc" stroke-dasharray="null"
+                                    stroke-linecap="null" stroke-linejoin="null" stroke-width="3" />
+
+                                <g id="svg_50">
+                                    <ellipse cx="520.5" cy="214.5" fill="#ffffff" id="svg_46" rx="32" ry="9"
+                                        stroke="#333333" stroke-dasharray="null" stroke-linecap="null"
+                                        stroke-linejoin="null" stroke-width="7" />
+                                    <rect fill="#ffffff" height="14" id="svg_47" stroke="#4c4c4c"
+                                        stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null"
+                                        stroke-width="3" width="4" x="516.5" y="204.5" />
+                                    <rect fill="#ffffff" height="0" id="svg_48" stroke="#333333" stroke-dasharray="null"
+                                        stroke-linecap="null" stroke-linejoin="null" stroke-width="2" width="1"
+                                        x="501.5" y="213.5" />
+                                    <rect fill="#ffffff" height="3" id="svg_49" stroke="#333333" stroke-dasharray="null"
+                                        stroke-linecap="null" stroke-linejoin="null" stroke-width="2" width="52"
+                                        x="493.5" y="210.5" />
+                                </g>
+                                <rect fill="#191919" height="6" id="svg_51" stroke="#4c4c4c" stroke-dasharray="null"
+                                    stroke-linecap="null" stroke-linejoin="null" stroke-width="2"
+                                    transform="rotate(-62.9203 413.587 366.823)" width="46.85786" x="390.15801"
+                                    y="363.82266" />
+                                <rect fill="#666666" height="24" id="svg_52" stroke="#4c4c4c" stroke-dasharray="null"
+                                    stroke-linecap="null" stroke-linejoin="null" stroke-width="2" width="55" x="160.5"
+                                    y="333.5" />
+                                <rect fill="#666666" height="24" id="svg_56" stroke="#4c4c4c" stroke-dasharray="null"
+                                    stroke-linecap="null" stroke-linejoin="null" stroke-width="2" width="55" x="560"
+                                    y="336.5" />
+                                <g id="svg_35">
+                                    <rect fill="#e5e5e5" height="51.000001" id="svg_25" stroke="#e5e5e5"
+                                        stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null"
+                                        width="55.999999" x="484.5" y="268.5" />
+                                    <ellipse cx="513.5" cy="295.5" fill="#cccccc" id="svg_26" rx="25" ry="23"
+                                        stroke="#cccccc" stroke-dasharray="null" stroke-linecap="null"
+                                        stroke-linejoin="null" />
+                                    <ellipse cx="513.5" cy="298.5" fill="#b2b2b2" id="svg_33" rx="15" ry="14"
+                                        stroke="#b2b2b2" stroke-dasharray="null" stroke-linecap="null"
+                                        stroke-linejoin="null" stroke-width="null" />
+                                </g>
+                                <rect fill="#4c4c4c" height="33.69518" id="svg_40" stroke="#333333"
+                                    stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null"
+                                    stroke-width="3" transform="rotate(12.0948 332.741 257.373)" width="6" x="329.74146"
+                                    y="240.52558" />
+                            </g>
+
+                            <title>Layer 3</title>
+                            <g class="layer">
+                                <title>Layer 3</title>
+                                <g class="layer" id="svg_17" />
+                                <rect fill="#000000" height="26" id="svg_2" stroke="#000000" stroke-dasharray="null"
+                                    stroke-linecap="null" stroke-linejoin="null" width="767" x="2.5" y="1.5" />
+                                <text fill="#ffff00" font-family="Serif" font-size="24" font-style="italic"
+                                    font-weight="bold" id="svg_88" stroke="#ffff00" stroke-dasharray="null"
+                                    stroke-linecap="null" stroke-linejoin="null" text-anchor="middle" x="389.5"
+                                    xml:space="preserve" y="23.5">Compression Test</text>
+                                <g id="bottom" />
+                                <rect fill="#000000" height="22.43901" id="svg_10" stroke="#000000"
+                                    stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null"
+                                    stroke-width="3" width="764" x="3" y="473" />
+                                <text fill="#ffff00" font-family="Serif" font-size="14" font-style="italic"
+                                    font-weight="bold" id="svg_888" stroke="#ffff00" stroke-dasharray="null"
+                                    stroke-linecap="null" stroke-linejoin="null" text-anchor="middle"
+                                    transform="matrix(1 0 0 0.863039 0 64.3033)" x="368.5" xml:space="preserve"
+                                    y="488.221746">&gt;: Click Next</text>
+                                <text fill="#ffff00" font-family="Serif" font-size="14" font-style="italic"
+                                    font-weight="bold" id="svg_89" stroke="#ffff00" stroke-dasharray="null"
+                                    stroke-linecap="null" stroke-linejoin="null" text-anchor="middle"
+                                    transform="matrix(1 0 0 0.863039 0 64.3033)" x="368.5" xml:space="preserve"
+                                    y="488.221746">&gt;:Click on Next to do the experiment</text>
+                                <rect fill="#000000" height="486" id="svg_20" stroke="#000000" stroke-dasharray="null"
+                                    stroke-linecap="null" stroke-linejoin="null" stroke-width="3" width="10" x="0.5"
+                                    y="7.50002" />
+                                <rect fill="#000000" height="465.00001" id="svg_24" stroke="#000000"
+                                    stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null"
+                                    stroke-width="3" width="10" x="758.5" y="27.5" />
+                                <text fill="#000000" font-family="serif" font-size="24" id="svg_27" stroke="#ffff00"
+                                    stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null"
+                                    stroke-width="0" text-anchor="middle" x="215.5" xml:space="preserve" y="12.5" />
+                            </g>
+                            </g>
+                        </svg>
+
+                </th>
+                <pbody id="tab">
+                    <td>
+                      <!--- Table for recording data --->
+
+                        <table id="in-tab" style="width:50%">
+                            <caption> </caption>
+                            <tr>
+                                <th colspan="5"> Experiment Data Chart</th>
+                            </tr>
+                            <tr>
+                                <th>Sieve Size(mm)</th>
+                                <th>Mass of Soil</th>
+                                <th>% of soil retained</th>
+                                <th>Cumulative %</th>
+                                <th>% Finer</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </td>
+                </pbody>
+            </tr>
+            <tr>
+                <td>
+                    <div id="chartContainer" style="height: 300px; width: 500px;"></div>
+                    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+                </td>
+            </tr>
+        </table>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#btn-1").click(function () {
+          $("#chartContainer").hide();
+          $("#svg_40").hide();
+          $("#brick").hide();
+          $("#in-tab").hide();
+          $("#main").hide();
+          $("#rest").hide();
+        });
+    });
+
+    $(document).ready(function () {
+        $(function () {
+            $("#svg_40").hide();
+        });
+    });
+
+    $(document).ready(function () {
+        $(function () {
+            $("#chartContainer").hide();
+        });
+    });
+
+    $(document).ready(function () {
+        $(function () {
+            // $('#tab-hide td1').hide();
+            $("#in-tab").hide();
+        });
+    });
+
+        $(document).ready(function () {
+        $(function () {
+            $("#main").hide();
+        });
+    });
+
+    $(document).ready(function () {
+        $(function () {
+            $("#rest").hide();
+        });
+    });
+    $(document).ready(function () {
+        $(function () {
+            $("#brick").hide();
+        });
+    });
+
+    $(document).ready(function () {
+        $(function () {
+            $("#svg_42").hide();
+        });
+    });
+
+    $(document).ready(function () {
+        $(function () {
+            // $("#svg_89").hide();
+        });
+    });
+
+    $(document).ready(function () {
+        $(function () {
+            $("#svg_888").hide();
+        });
+    });
+
+    $(document).ready(function () {
+        $(function () {
+            //$("#p").hide();
+        });
+    });
+
+    $('#btn-2').click(function () {
+
+        $("#brick").show();
+        $("#svg_89").hide();
+        $("#svg_888").show();
+        $("#main").show();
+        $("#rest").show();
+        $('#topp').animate({
+            'foo': 20
+        }, {
+                step: function (foo) {
+                    $(this).attr('y', foo);
+                },
+                duration: 1500
+            });
+        setTimeout(function () {
+            $("#svg_40").show();
+        }, 2600);
+
+        setTimeout(function () {
+            $("#in-tab").show();
+        }, 3400);
+
+        $("#chartContainer").show();
+
+        setTimeout(function () {
+            myGraph();
+        }, 3600);
+        //$("h1").css.("visibility", "show");
+    });
+
+    $(document).ready(function () {
+        $("#btn-3").click(function () {
+            $("#chartContainer").hide();
+            $("#svg_40").hide();
+            $("#brick").hide();
+            $("#in-tab").hide();
+            $('#topp').animate({
+                'foo': -20
+            }, {
+                    step: function (foo) {
+                        $(this).attr('y', foo);
+                    },
+                    duration: 1000
+                });
+
+            $('#topp').animate({
+                'foo': 20
+            }, {
+                    step: function (foo) {
+                        $(this).attr('y', foo);
+                    },
+                    duration: 3500
+                });
+
+            setTimeout(function () {
+                $("#brick").show();
+            }, 1800);
+
+
+            setTimeout(function () {
+                $("#svg_40").show();
+            }, 4900);
+
+            setTimeout(function () {
+                $("#chartContainer").show();
+            }, 4400);
+
+            setTimeout(function () {
+                $("#in-tab").show();
+            }, 4400);
+
+            setTimeout(function () {
+                $(".hidden").css("color", "black");
+                $("p").show();
+            }, 4400);
+
+            setTimeout(function () {
+                myGraph();
+            }, 4500);
+
+            div.queue(function () {
+                $("#svg_40").hide();
+                $("#brick").hide();
+                div.dequeue();
+            });
+        });
+    });
+</script>
+<script>
+    var imgObj;
+    var animate = null;
+
+    function init() {
+        imgObj = document.getElementById('topp');
+        imgObj.style.position = 'relative';
+        imgObj.style.left = '0px';
+    }
+
+    startStopImg = function () {
+        if (animate != null) {
+            stop();
+        } else {
+            moveRight();
+
+        }
+        change();
+    }
+
+    function moveRight() {
+        imgObj.style.left = (parseInt(imgObj.style.left) + 10) + 'px';
+        animate = setTimeout(moveRight, 50);
+    }
+
+    change = function () {
+        var elem = document.getElementById("startButton");
+        if (elem.value == "Stop") elem.value = "Start";
+        else elem.value = "Stop";
+    }
+
+    stop = function () {
+        clearTimeout(animate);
+        animate = null;
+    }
+    window.onload = init();
+</script>
+
+
+<script>
+    //window.onload =
+    function myGraph() {
+
+        var chart = new CanvasJS.Chart("chartContainer", {
+            animationEnabled: true,
+            title: {
+                text: "Compression Strength Test Graph"
+            },
+            axisY: {
+                title: "% Finer",
+                valueFormatString: "",
+                suffix: ".",
+
+            },
+            data: [{
+                yValueFormatString: "## ",
+                xValueFormatString: "YY",
+                type: "spline",
+                dataPoints: [{
+                    x: 1,
+                    y: 14
+                },
+                {
+                    x: 2,
+                    y: 14
+                },
+                {
+                    x: 3,
+                    y: 14
+                },
+                {
+                    x: 4,
+                    y: 14
+                },
+                {
+                    x: 5,
+                    y: 14
+                },
+                {
+                    x: 6,
+                    y: 14
+                },
+                {
+                    x: 7,
+                    y: 14
+                },
+                {
+                    x: 8,
+                    y: 17.5
+                },
+                {
+                    x: 9,
+                    y: 105
+                },
+                {
+                    x: 10,
+                    y: 109.2
+                },
+                {
+                    x: 11,
+                    y: 110.6
+                },
+                {
+                    x: 12,
+                    y: 112
+                },
+                {
+                    x: 13,
+                    y: 112
+                },
+                {
+                    x: 14,
+                    y: 112
+                },
+                {
+                    x: 15,
+                    y: 112
+                },
+                {
+                    x: 16,
+                    y: 112
+                },
+                {
+                    x: 17,
+                    y: 112
+                }
+                ]
+            }]
+        });
+        chart.render();
+    }
+</script>
+</html>
